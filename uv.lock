@@ -1,0 +1,30 @@
+version = 1
+revision = 2
+requires-python = ">=3.8"
+
+[manifest]
+members = [
+    "bedrock-fsb-extracter",
+    "mineutau",
+]
+
+[[package]]
+name = "bedrock-fsb-extracter"
+version = "0.0.0"
+source = { virtual = "tools/bedrock_fsb_extracter" }
+dependencies = [
+    { name = "sfyi-fsb5" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "sfyi-fsb5", specifier = ">=1.1" }]
+
+[[package]]
+name = "mineutau"
+source = { virtual = "." }
+
+[[package]]
+name = "sfyi-fsb5"
+version = "1.1"
+source = { registry = "https://mirror.nju.edu.cn/pypi/web/simple" }
+sdist = { url = "https://mirror.nju.edu.cn/pypi/web/packages/c2/44/6f28b3a66141303a5e4c6f9bd5cb912d2c133184f67810551db0c452537d/sfyi-fsb5-1.1.tar.gz", hash = "sha256:689e868df8ad5310645cb64670b6b42ce6b2a2babb1d9d33b1245e5d72a18d60" }

@@ -11,7 +11,13 @@
 # https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9%E7%89%88%E5%A3%B0%E9%9F%B3%E4%BA%8B%E4%BB%B6
 # 查阅相关内容之定义
 
-for sound in open("sound_definitions.json"):
-    print(sound)
+
+import json
+from pathlib import Path
+from typing import Any
+
+def load_sound_definitions(defination_path: str | Path) -> dict[str, dict[str, Any]]:
+    with open(defination_path, "r", encoding= "utf-8") as f:
+        return json.load(f)["sound_definitions"]
 
 

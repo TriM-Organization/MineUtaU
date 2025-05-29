@@ -1,3 +1,15 @@
+
+
+# My Stuff
+*.fsb
+*.wav
+/sounds
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
