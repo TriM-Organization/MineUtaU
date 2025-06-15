@@ -3,7 +3,7 @@ import os
 import json
 import fsb5
 from io import BytesIO
-import sys
+# import sys
 
 # 初始化 MPI
 comm = MPI.COMM_WORLD
