@@ -4,10 +4,7 @@
 *.fsb
 *.wav
 /sounds
-
-
-
-
+tools/bedrock_fsb_extracter/sounds
 
 
 # Byte-compiled / optimized / DLL files
