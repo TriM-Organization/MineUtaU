@@ -9,6 +9,7 @@
 [tool.uv.workspace]
     members = [
         "tools/bedrock_fsb_extracter",
+        "tools/wave_comparison",
     ]
 
 
